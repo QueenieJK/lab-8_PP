@@ -10,12 +10,12 @@ int main()
     const int size = 3;
     int tab[size] = { 1,2,3 };
     for (int i = 0; i < size; i++) {
-        cout << "Indeks: " << i << " Wartoœæ: " << tab[i] << endl;
+        cout << i << " Wartoœæ: " << tab[i] << endl;
     }
     int* tab2[size];
     for (int i = 0; i < size; i++) {
         tab2[i] = &tab[i];
-        cout << "Indeks: " << i << " Wartoœæ: " << tab2[i] << endl;
+        cout << i << " Wartoœæ: " << *tab2[i] << endl;
     }
 }
 
